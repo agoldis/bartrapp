@@ -74,23 +74,25 @@
         <section id="contact-section" class="content-section">
           <div class="title">Contact us</div>
           <form method="POST" action="cgi-bin/mailer.pl">
-          <div>
+	  <div id="form-result-message">
+          </div>
+          <div id="form-wrapper">
             <div>
             <label for="name">Name</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" name="name"/>
             </div>
 
             <div>
             <label for="email">Email</label>
-            <input type="email" id="email"/>
+            <input type="email" id="email" name="email"/>
             </div>
 
             <div>
               <label for="message">Message</label>
-              <textarea rows="6" id="message"></textarea>
+              <textarea rows="6" id="message" name="message"></textarea>
             </div>
-
-            <button type="submit">Submit</button>
+	<div class="g-recaptcha" data-sitekey="6LeLVwgTAAAAAAYRf6wXMAPuNNLDOV_o9tGWHrZd"></div>
+            <button type="button" id="submit-button">Submit</button>
           </div>
           </form>
           </div>
@@ -115,6 +117,7 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+	    </script>
+	    <script src='https://www.google.com/recaptcha/api.js'></script>
     </body>
 </html>

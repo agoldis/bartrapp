@@ -360,15 +360,15 @@ button:active {
     height: 100%;
 }
 
-#contact-section iframe {
-  display: block;
-  width: 70%;
-  margin: 0 auto;
+#form-result-message {
+  display:none;
+  opacity 0;
 }
 
-#contact-section  body {
-  background-color: transparent;
+#form-wrapper {
+  opacity: 1;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
