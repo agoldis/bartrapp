@@ -100,6 +100,132 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@media screen and (max-width: 800px) {
+ #welcome-section img {
+   width: 100px;
+ }
+ #title {
+   font-size: 2em;
+ }
+ #subtitle {
+   font-size: 1em;
+ }
+
+ #founders img {
+   width: 90%;
+   margin-bottom: 5px;
+ }
+
+ #discover-button {
+   position: absolute !important;
+   left: 50% !important;
+   transform: translate(-50%) !important;
+   bottom: 20px;
+ }
+
+ .content-section div {
+   text-align: center;
+   width: 90%;
+   margin: 20px auto;
+ }
+
+ .action {
+  position: relative;
+  left: 50%;
+  color: white;
+  transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  margin-top:30px;
+}
+
+#toasters-section {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  overflow: hidden;
+}
+
+#toasters-section .toaster {
+  height: 100%;
+  vertical-align: top;
+  padding: 4%;
+}
+#heseg-members {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.3em;
+}
+
+}
+
+@media screen and (min-width: 800px) {
+  #intro #title {
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+
+  #intro #subtitle {
+    font-size: 20px;
+  }
+
+  #founders img {
+    width: 45%;
+    display: inline-block;
+  }
+
+  #discover-button {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translate(-50%) !important;
+    -o-transform: translate(-50%) !important;
+    -moz-transform: translate(-50%) !important;
+    -webkit-transform: translate(-50%) !important;
+    bottom: 30px;
+  }
+
+  .content-section div {
+    text-align: center;
+    width: 70%;
+    margin: 50px auto;
+  }
+
+  .action {
+   position: relative;
+   left: 50%;
+   color: white;
+   transform: translateX(-50%);
+   -o-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+   margin-top:30px;
+  }
+
+  #toasters-section {
+    width: 90%;
+    height: 20%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    display: table;
+  }
+
+  #toasters-section .toaster {
+    width: 25%;
+    height: 100%;
+    float:left;
+    vertical-align: top;
+    padding: 4%;
+  }
+
+  #heseg-members {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.7em;
+  }
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -113,6 +239,7 @@ section {
   min-height: 100vh;
   position:relative;
 }
+
 .title {
   font-size: 200%;
 }
@@ -149,15 +276,6 @@ section {
   text-align: center;
 }
 
-#intro #title {
-  font-size: 60px;
-  text-transform: uppercase;
-}
-
-#intro #subtitle {
-  font-size: 20px;
-}
-
 #intro #action {
   margin-top: 40px;
 }
@@ -172,33 +290,12 @@ section {
   padding: 20px;
 }
 
-#founders img {
-  width: 45%;
-  display: inline-block;
-
-}
-
 #contact-section {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
 }
 
-#toasters-section {
-  width: 90%;
-  height: 20%;
-  margin: 0 auto;
-  text-align: center;
-  overflow: hidden;
-  display: table;
-}
 
-#toasters-section .toaster {
-  width: 25%;
-  height: 100%;
-  float:left;
-  vertical-align: top;
-  padding: 4%;
-}
 
 #toasters-section .toaster div {
   text-align: center;
@@ -258,13 +355,6 @@ textarea {
   font-size: 150%
 }
 
-
-.content-section div {
-  text-align: center;
-  width: 70%;
-  margin: 50px auto;
-}
-
 #footer {
   padding: 2%;
   background-color: rgba(0,0,0,0.7);
@@ -282,24 +372,8 @@ textarea {
   color: #56B24C;
 }
 
-.action {
-  position: relative;
-  left: 50%;
-  color: white;
-  transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  bottom: 30px;
-  margin-top:30px;
-}
 
-#discover-button {
-  position: absolute !important;
-  left: 50% !important;
-  transform: translate(-50%) !important;
-  bottom: 30px;
-}
+
 
 button {
   font-family: 'Abel', 'sans-serif';
@@ -449,9 +523,6 @@ button:active {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
